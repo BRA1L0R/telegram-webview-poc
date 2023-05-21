@@ -4,7 +4,9 @@
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
         let app = window.Telegram.WebApp;
-        document.getElementById("startparam").innerText = app.initDataUnsafe.start_param || "START PARAMETER NOT WORKING";
+        window.onload = () => {
+            document.getElementById("startparam").innerText = app.initDataUnsafe.start_param || "START PARAMETER NOT WORKING"
+        };
     </script>
 </head>
 
